@@ -1,9 +1,10 @@
 var TodoController = (function() {
 
     var todoList = [];
-    return {
+    return $.extend({
         addTodo: function(todo) {
             todoList.push(todo);
+            this.trigger('add');
         },
 
         getTodoList: function() {
@@ -14,8 +15,10 @@ var TodoController = (function() {
             for (var i in todoList) {
                 if (todoList[i] == todo) {
                     delete todoList[i];
+                    this.trigger('delete');
+                    break;
                 }
             }
         }
-    }
+    }, new EventEmitter());
 })();

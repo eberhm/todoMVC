@@ -3,8 +3,11 @@
 <head>
     <title>TODO MVC</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="application/javascript" src="js/Mixins/EventEmitter.js"></script>
     <script type="application/javascript" src="js/Model/Todo.js"></script>
     <script type="application/javascript" src="js/View/List.js"></script>
+    <script type="application/javascript" src="js/View/Form.js"></script>
+    <script type="application/javascript" src="js/View/Todo.js"></script>
     <script type="application/javascript" src="js/Controller/Todo.js"></script>
     <script type="application/javascript" src="js/main.js"></script>
 </head>
@@ -12,6 +15,11 @@
 
 <ul id="list"></ul>
 
+<div id="addTodo">
+    <input type="text" id="todo-title" placeholder="title" value ="" />
+    <input type="text" id="todo-author" placeholder="author" value ="" />
+    <button id="todo-add-btn" >ADD</button>
+</div>
 
 </body>
 </html>
