@@ -1,4 +1,5 @@
-var EventEmitter = (function(){
+define('App/Mixins/EventEmitter',
+    function(){
     var Emitter = function() {
         this.handlers = {};
     };
@@ -20,4 +21,4 @@ var EventEmitter = (function(){
     };
 
     return Emitter;
-})();
+});

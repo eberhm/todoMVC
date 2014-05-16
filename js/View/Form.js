@@ -1,20 +1,23 @@
-var FormView = (function() {
-    var FormView = function(scope, model) {
-        this.scope = $(scope);
-        this.model = model;
-    };
+define('App/View/Form',
+    ['App/Model/Todo', 'jquery'],
+    function(Todo, $) {
 
-    FormView.prototype = {
-        init: function() {
-            var that = this;
-            this.scope.on('click', function() {
-                var title = $('#todo-title').val();
-                var author = $('#todo-author').val();
+        var FormView = function(scope, model) {
+            this.scope = $(scope);
+            this.model = model;
+        };
 
-                that.model.addTodo(new Todo(title, author));
-            });
+        FormView.prototype = {
+            init: function() {
+                var that = this;
+                this.scope.on('click', function() {
+                    var title = $('#todo-title').val();
+                    var author = $('#todo-author').val();
+
+                    that.model.addTodo(new Todo(title, author));
+                });
+            }
         }
-    }
 
-    return FormView;
-})();
+        return FormView;
+});

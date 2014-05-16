@@ -1,4 +1,6 @@
-var TodoController = (function() {
+define('App/Controller/Todo',
+    ['App/Mixins/EventEmitter', 'jquery'],
+    function(EventEmitter, $) {
 
     var todoList = [];
     return $.extend({
@@ -21,4 +23,4 @@ var TodoController = (function() {
             }
         }
     }, new EventEmitter());
-})();
+});
