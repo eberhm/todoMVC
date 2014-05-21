@@ -21,14 +21,22 @@ Day 3:
 Initial migration of the current application to a Backbone application. A lot of things left to do:
 
 -Routing
+
 -Controllers
+
 -Repositories
 
+
 Parts of the API we did not cover (and would be good to read)
+
 View
+
   events
+  
   view.$el
+  
   template
+  
   
 And much more...
 
