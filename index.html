@@ -2,19 +2,9 @@
 <html>
 <head>
     <title>TODO MVC</title>
-    <script type="application/javascript" src="bower_components/requirejs/require.js" data-main="js/main.js"></script>
-    <!--<script type="application/javascript" src="js/Mixins/EventEmitter.js"></script>-->
-    <!--<script type="application/javascript" src="js/Model/Todo.js"></script>-->
-    <!--<script type="application/javascript" src="js/View/List.js"></script>-->
-    <!--<script type="application/javascript" src="js/View/Form.js"></script>-->
-    <!--<script type="application/javascript" src="js/View/Author/List.js"></script>-->
-    <!--<script type="application/javascript" src="js/View/Todo.js"></script>-->
-    <!--<script type="application/javascript" src="js/Controller/Todo.js"></script>-->
-    <!--<script type="application/javascript" src="js/main.js"></script>-->
+    <script type="application/javascript" src="bower_components/requirejs/require.js" data-main="js/backbone/main.js"></script>
 </head>
 <body>
-
-<ul id="list"></ul>
 
 <div id="addTodo">
     <input type="text" id="todo-title" placeholder="title" value ="" />
@@ -22,6 +12,10 @@
     <button id="todo-add-btn" >ADD</button>
 </div>
 
+<h2>TODOS</h2>
+<ul id="list"></ul>
+
+<h2>AUTHORS</h2>
 <ul id="author-list"></ul>
 
 </body>
